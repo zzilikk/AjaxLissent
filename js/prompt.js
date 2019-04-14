@@ -15,8 +15,8 @@ document.addEventListener('DOMContentLoaded', function(){  // Добавляем
         }
 
         var data = {  // Создадим объект который будем отправлять на сервер.
-          name: userName,
-          text: userMassege
+          name: userName, // Создаим свойство объекта типа name
+          text: userMassege // Создаим свойсвто объекта типа massage
         }
         if(userTextarea.value != ''){ // Если сообщение введено
             ajax(data); // совершаем наш ajax запрос и передаём ему наш объект 
