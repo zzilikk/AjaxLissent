@@ -18,13 +18,10 @@ document.addEventListener('DOMContentLoaded', function(){  // Добавляем
           name: userName,
           text: userMassege
         }
-        if(userTextarea.value != ''){
-            ajax(data);
+        if(userTextarea.value != ''){ // Если сообщение введено
+            ajax(data); // совершаем наш ajax запрос и передаём ему наш объект 
         }
        
         userTextarea.value = ''; // очищаем текстовое поле.
     });
-
-
-
 });

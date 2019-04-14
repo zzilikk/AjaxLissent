@@ -39,18 +39,18 @@ function addMassage(name, massage){
     
     let time = document.createElement('div'); // Создадим div объект
     time.classList.add('result-time'); // Добавим ему класс
-    time.innerHTML = hours + ":" + minutes + ":" + seconds; // Добавим внутрь div значение из поля ввода input
+    time.innerHTML = hours + ":" + minutes + ":" + seconds; // Добавим время
    
     let resultName = document.createElement('div'); // Создадим div объект
     resultName.classList.add('result-name'); // Добавим ему класс
-    resultName.innerHTML = name+":"; // Добавим внутрь div значение из поля ввода input
+    resultName.innerHTML = name+":"; // Добавим имя
   
     let resultMassage = document.createElement('div'); // Создадим div объект
     resultMassage.classList.add('result-massage'); // Добавим ему класс
-    resultMassage.innerHTML = massage; // Добавим внутрь div значение из поля ввода input
+    resultMassage.innerHTML = massage; // Добавим сообщение
   
-    resultWrap.append(time); 
-    resultWrap.append(resultName); 
-    resultWrap.append(resultMassage); 
-    chat.append(resultWrap); 
-}
+    resultWrap.append(time);  // добавим время во wraper
+    resultWrap.append(resultName);   // добавим имя во wraper
+    resultWrap.append(resultMassage); // добавим сообщение во wraper
+    chat.append(resultWrap); // добавим wraper в окно чата
+} 
